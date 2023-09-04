@@ -67,10 +67,10 @@ class AnimeCache {
 public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to this basic anime reader program. Designed with a lot of hate to JAVA!! ");
-        String filename = "C:\\Users\\Haitham\\Desktop\\sample-input.txt";
-        String logFilename = "C:\\Users\\Haitham\\Desktop\\LOG.txt";
+        String filename = "sample-input.txt";
+        String logFilename = "LOG.txt";
         BufferedWriter logWriter = new BufferedWriter(new FileWriter(logFilename));
-        RandomAccessFile file = new RandomAccessFile("C:\\Users\\Haitham\\Desktop\\sample-input.txt", "rw");
+        RandomAccessFile file = new RandomAccessFile("sample-input.txt", "rw");
         Map<String, Float> animeRatings = new HashMap<>();
         AnimeCache cache = new AnimeCache(10);
 
